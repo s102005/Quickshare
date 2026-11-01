@@ -1,0 +1,22 @@
+{
+  "name": "quickshare",
+  "version": "1.0.0",
+  "description": "QuickShare - Secure File Sharing and Simplified Digital Transfer",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
+    "start": "cd backend && node src/server.js",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "tunnel": "npx --yes cloudflared tunnel --url http://localhost:5000",
+    "tunnel:lt": "npx --yes localtunnel --port 5000"
+  },
+  "keywords": [
+    "quickshare",
+    "file-sharing",
+    "mern",
+    "react",
+    "nodejs"
+  ],
+  "author": "QuickShare Team",
+  "license": "ISC"
+}
